@@ -333,7 +333,7 @@ hr.longline {
 
 .videoshorts {
     width: 90%;
-    border: 1px solid rgb(252, 55, 55);
+    /*border: 1px solid rgb(252, 55, 55);*/
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
