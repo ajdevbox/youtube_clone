@@ -332,7 +332,7 @@ img.shorts-pic {
     cursor: pointer;
 }
 
-img.shorts-pic :hover {
+img.shorts-pic:hover {
     transform: scale(1.15);
 }
 
