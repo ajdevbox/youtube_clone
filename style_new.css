@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* reset styles here */ 
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+
+}
+
+/* ====Header Section ====================*/
+
+.header-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 70px;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    /* border: 1px solid black; */
+    position: fixed;
+    margin-top: 0;
+
+
+}
+
+.search {
+    flex: 2;
+    
+}
+
+.logo {
+    flex: 1; 
+}
+
+.profile {
+    flex: 1;
+    justify-content: right;
+    display: flex; 
+    
+}
+
+/* ==== logo ====================================*/
+.logo i {
+    position: absolute;
+    margin-top: 6px;
+ }
+
+.logo img {
+    padding-left: 20px;
+}
+
+/* ====Searchbox style ====================================*/
+
+.search label {
+    position: relative;
+    width: 100%;
+    padding-right: 6px 10px;
+    margin-right: 10px;
+
+}
+.search input:focus-visible {
+    outline: none;
+}
+
+.search input {
+    padding: 5px;
+    width: 50%; 
+    border-radius: 15px 0 0 15px;
+    border-color: rgb(177, 177, 177);   
+}
+
+.search label .searchbtn {
+    cursor: pointer;
+    height: 29px;
+    width: 40px;
+    border-radius: 0 15px 15px 0px; 
+    margin-left: -4px;
+    z-index: 10px;
+    border-style: none;
+
+}
+
+/* ====Top right Nav Section ====================================*/
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.navbtn {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-style: none;
+}
+
+.navbtn:hover {
+    background-color: rgba(133, 130, 130, 0.2);
+}
+
+.redicon {
+    color: red;
+}
+
+/* ==== container ====================================*/
+.container {
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+/* ====RightNavigation Bar ====================================*/
+
+.rightnav {
+    width: 240px;
+    margin-top: 60px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-top: 15px;
+
+    
+}   
+.primarybtn {
+    height: 30px;
+    width: 160px;
+    border-radius: 6px;
+    font-size: 0.6rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border: none;
+}
+
+.rightnav .primarybtn.btnactive {
+    background-color: rgba(170, 168, 168, 0.2);
+}
+
+.primarybtn:hover {
+    background-color: rgba(170, 168, 168, 0.2);
+    
+}
+.rightnav .primarybtn i {
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+
+.noicon {
+    padding-left: 22px;
+
+}
+
+hr {
+    border: 1px solid rgba(170, 168, 168, 0.1);
+    width: 150px;
+}
+
+h3 {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+/* ---== tag section=============================== */
+
+.maincontent {
+    
+    margin-top: 60px;
+}
+.subusers {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightnav img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+   
+}
+
+.tagsection {
+    display: flex;
+    column-gap: 5px;
+    
+}
+.tagsection .tagbtn {
+    margin: 17px 0 0 10px ;
+    padding: 8px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border: none;
+}
+
+.tagbtn:hover {
+    background-color: rgba(170, 168, 168, 0.2);
+}
+
+.tagsection .tagbtn.btnactive {
+    background-color: black;
+    color: white;
+}
+
+/* ====Video tile section ====================================*/
+
+.videotile {
+    /*display: flex;*/
+    margin-top: 10px;
+    width: 90%;
+    /* border: 1px solid rgb(252, 55, 55);*/
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+}
+
+.thumbnail-wrapp {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    
+    margin-bottom: 10px;
+    
+}
+.thumbnail-pic {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.thumbnail-pic:hover {
+    transform: scale(1.15);
+}
+
+.thumb-profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 0 5px 10px;
+    
+}
+
+.card-title {
+    display: flex;
+    margin: 10px 0 10px 0;
+   
+
+}
+h5.title {
+    color: rgb(53, 52, 52);
+    margin-left: 10px;
+    font-size: 0.7rem;
+    line-height: 15px;
+}
+
+p.channle-data {
+    font-size: 0.6rem;
+    margin-left: 45px;
+    padding-bottom: 5px;
+    color:rgba(170, 168, 168, 10);
+}
+
+
+hr.longline {
+    border: 1px solid rgba(129, 128, 128, 0.1);
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ====shorts section ====================================*/
+
+.videoshorts {
+    width: 90%;
+    /* border: 1px solid rgb(252, 55, 55);*/
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+}
+.short-wrapp {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin-bottom: 10px;
+
+
+}
+
+.short-title {
+    color: rgb(53, 52, 52);
+    margin: 10px 0px 0;
+    font-size: 0.7rem;
+    line-height: 15px;
+  
+}
+
+img.shorts-pic {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+img.banner {
+    width: 93%;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+}
