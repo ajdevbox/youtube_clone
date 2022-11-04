@@ -323,7 +323,7 @@ hr.longline {
     margin: 10px 0px 0;
     font-size: 0.7rem;
     line-height: 15px;
-  
+
 }
 
 img.shorts-pic {
@@ -333,7 +333,7 @@ img.shorts-pic {
 }
 
 img.shorts-pic:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 img.banner {
