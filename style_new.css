@@ -23,6 +23,7 @@ font-family: 'Roboto', sans-serif;
     /* border: 1px solid black; */
     position: fixed;
     margin-top: 0;
+    z-index: 30;
 
 
 }
@@ -120,13 +121,17 @@ font-family: 'Roboto', sans-serif;
 /* ====RightNavigation Bar ====================================*/
 
 .rightnav {
-    width: 240px;
+    width: 220px;
     margin-top: 60px;
     margin-left: 60px;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
     padding-top: 15px;
+    
+    background-color: #fff;
+    position: fixed;
+   
 
     
 }   
@@ -183,6 +188,11 @@ h4 {
 .maincontent {
     
     margin-top: 60px;
+    margin-left: 282px;
+    
+    background-color: #fff;
+    position: absolute;
+
 }
 .subusers {
     width: 180px;
@@ -202,6 +212,13 @@ h4 {
 .tagsection {
     display: flex;
     column-gap: 5px;
+    justify-content: left;
+    background-color: #fff;
+    width: 90%;
+    margin-top: -8px;
+    padding-bottom: 15px;
+    position: fixed;
+    z-index: 20;
     
 }
 .tagsection .tagbtn {
@@ -233,7 +250,9 @@ h4 {
 
 .videotile {
     /*display: flex;*/
-    margin-top: 10px;
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-left: 20px;
     width: 90%;
     /* border: 1px solid rgb(252, 55, 55);*/
     display: flex;
@@ -307,6 +326,7 @@ hr.longline {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
+    padding-left: 8px;
 
 }
 .short-wrapp {
@@ -337,7 +357,7 @@ img.shorts-pic:hover {
 }
 
 img.banner {
-    width: 93%;
+    width: 95%;
     margin: 10px 0 10px;
     border-radius: 10px;
 }
