@@ -70,7 +70,6 @@ input {
     width: 50%;
     border: 1px solid rgb(126, 126, 126);
     border-radius: 15px 0 0 15px;
-
 }
 
 .search input {
@@ -91,6 +90,7 @@ input {
 
 .search input:focus-visible {
     outline: none;
+   
 }
 
 /* ====Top right Nav Section ====================================*/
@@ -285,12 +285,13 @@ h4 {
     height: 140px;
     border-radius: 10px 10px 10px 10px;
     margin-bottom: 5px;
-    transition: transform .4s;
+    transition: transform .5s;
     cursor: pointer;
 }
 
 .thumbnail-pic:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
+
 }
 
 .thumb-profile {
